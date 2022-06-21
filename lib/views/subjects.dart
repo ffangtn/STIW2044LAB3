@@ -289,7 +289,7 @@ class _SubjectsScreenState extends State<SubjectScreen> {
           subjects = <Subjects>[];
           extractdata['subjects'].forEach((v) {
             subjects.add(Subjects.fromJson(v));
-            titlecenter = "No subject available";
+            titlecenter = "No Subject Available";
           });
         } setState(() {});
       
