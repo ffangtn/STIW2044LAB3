@@ -23,7 +23,7 @@ class SubjectScreen extends StatefulWidget {
 
 class _SubjectsScreenState extends State<SubjectScreen> {
   List<Subjects> subjects = <Subjects>[];
-  String titlecenter = "Loading...";
+  String titlecenter = "No subject available";
   late double screenHeight, screenWidth, resWidth;
   final df = DateFormat('dd/MM/yyyy hh:mm a');
   var _tapPosition;
@@ -291,7 +291,7 @@ class _SubjectsScreenState extends State<SubjectScreen> {
             subjects.add(Subjects.fromJson(v));
           });
         } else {
-          titlecenter = "No Subject Available";
+          titlecenter = "No subject available";
         }
         setState(() {});
       }
